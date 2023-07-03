@@ -16,11 +16,25 @@ Note that strict channel priority may have removed packages required for satisfi
 
 This Circos plot uses Arial font, which does not come preinstalled. Please move `arial.ttf` from the included dir to the Circos directory `/fonts` (Conda Path: `/path/to/opt/anaconda3/envs/circos/fonts`) on your system to reproduce the included plot with Arial font, or use a default font by editing the `eindica_circos_006/eindica_circos.conf` file as shown below.  
 
+```
+<fonts>
+
+default = fonts/modern/cmunsx.otf
+#default = fonts/arial.ttf
+
+</fonts>
+```
+
 Run the below command from the main /Circos directory.  
 
 `circos -conf eindica_circos_006/eindica_circos.conf -outputdir eindica_circos_006/tmp`
 
 The below Circos plot will be produced. Note: a, b, c, and d were added to the final image using Inkspace.
+
+
+
+I have also included a commented out `<links>` section in `eindica_circos.conf` which was not included in Fig. 1 of the publication. If you are curious about what links will look like between interchromosomal syntenic regions which are 14.5Kb or longer, uncomment the `<links>` section.  
+  
 
 ### Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.
 **Synteny Ideogram**
