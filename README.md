@@ -14,13 +14,14 @@ Note that strict channel priority may have removed packages required for satisfi
 **Try running the below command.**  
 `conda create --strict-channel-priority --override-channels --channel conda-forge --channel bioconda --channel defaults --name circos -c bioconda circos`  
 
-This Circos plot uses Arial font, which does not come preinstalled. Please move `arial.ttf` from the included dir to the Circos directory `/fonts` (Conda Path: `/path/to/opt/anaconda3/envs/circos/fonts`) on your system to reproduce the included plot with Arial font, or use a default font by editing the `eindica_circos_006/eindica_circos.conf` file as shown below.  
+This Circos plot uses Arial font, which does not come preinstalled. Please move `ArialBold.ttf` from the included dir to the Circos directory `/fonts` (Conda Path: `/path/to/opt/anaconda3/envs/circos/fonts`) on your system to reproduce the included plot with Arial font.
 
+Alternatively, use a font included with Circos by editing the `eindica_circos_006/eindica_circos.conf` file as shown below.  
 ```
 <fonts>
 
 default = fonts/modern/cmunsx.otf
-#default = fonts/arial.ttf
+#default = fonts/ArialBold.ttf
 
 </fonts>
 ```
@@ -29,9 +30,9 @@ Run the below command from the main /Circos directory.
 
 `circos -conf eindica_circos_006/eindica_circos.conf -outputdir eindica_circos_006/tmp`
 
-The below Circos plot will be produced. Note: a, b, c, and d were added to the final image using Inkspace.
+The below Circos plot will be produced. Note: a, b, c, and d in the publication version of the figure were added to the final image using [Inkspace](https://inkscape.org/).
 
-
+![eindicacircos](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/1880cfde-1cf2-43eb-a93c-489d8974b173)
 
 I have also included a commented out `<links>` section in `eindica_circos.conf` which was not included in Fig. 1 of the publication. If you are curious about what links will look like between interchromosomal syntenic regions which are 14.5Kb or longer, uncomment the `<links>` section.  
   
