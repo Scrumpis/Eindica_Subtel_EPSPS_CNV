@@ -1,0 +1,2 @@
+Chr3 1556751 1811750 color=red
+Chr3 2619751 2860750 color=blue

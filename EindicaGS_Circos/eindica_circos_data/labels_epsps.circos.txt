@@ -1,0 +1,2 @@
+Chr3 1666751 1701750 Region-A color=red
+Chr3 2719751 2760750 Region-B color=blue
