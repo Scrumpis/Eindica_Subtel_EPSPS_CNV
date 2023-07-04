@@ -44,7 +44,7 @@ The below Circos plot will be produced. Note: a, b, c, and d labels in the publi
 <sup><sub>The above Circos plot shows (a.) the length (Mb) of chromosomes one through nine as an index with corresponding (b.) gene-rich (blue) and gene-poor (yellow) genomic regions, (c.) *Gypsy* (red), *Copia* (blue), and other (black) transposable element family coverage across the genome (scale: 0-50%), (d.) transposable element rich (red) and transposable element poor (yellow) genomic regions, and the native locations of Region-A (red label) and Region-B (blue label) of the subtelomeric *EPSPS-Cassette*.</sub></sup>
 
 I have also included a commented out `<links>` section in `eindica_circos.conf` which was not included in Fig. 1 of the publication. If you are curious about what links will look like between interchromosomal syntenic regions which are 14.5Kb or longer, uncomment the `<links>` section.  
-  
+---------------  
   
 ### <ins>Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.</ins>
 #### *Synteny Ideogram*
