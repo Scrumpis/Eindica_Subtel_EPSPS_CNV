@@ -2,9 +2,17 @@
 DOI: [10.21203/rs.3.rs-2587355/v1](https://www.researchsquare.com/article/rs-2587355/v1)  
 Repo name: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV)
 
+
 ### Fig. 1: Overview of the glyphosate-susceptible *Eleusine indica* genome.
 #### *Circos Plot*  
 
+#### Prior data wrangling:
+a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled GS genome using standard BASH 
+b.
+c.
+d.
+
+#### Circos generation:
 Install Circos directly from [Circos website](http://circos.ca/software/download/circos/) or from [Conda](https://anaconda.org/bioconda/circos).
 
 If you see this error when installing via Conda...  
@@ -40,9 +48,14 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 ### Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.
 #### *Synteny Ideogram*
 
+
 ### Fig. 3: Copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible *Eleusine indica* individuals.
 #### *CNV Ideogram*  
 
+#### Prior data wrangling:
+Illumina resequencing data of 8 GR and 8 GS Eindica individuals was aligned to their corresponding GR or GS genomes using [HiSat2](https://github.com/DaehwanKimLab/hisat2) (version 2.1.0). [CNVnator](https://github.com/abyzovlab/CNVnator) (version 0.4.1) was used with these alignments to assess copy number variation across the genomes in terms of read depth. The resulting CNV files for chromosome three, the native location of EPSPS, were visualized using `EindicaRIdeogram_v5.R`.  
+
+#### Ideogram generation:
 [Eindica_EPSPS_CNV_Ideogram](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_EPSPS_CNV_Ideogram) contains `EindicaRIdeogram_v5.R` to create the below CNV ideograms and the associated source files in `Eindica_EPSPS_CNV_Ideogram/data`. Note: The publication version of Fig. 3 combines these two figures into one and adds additional visuals using [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).
 
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/281c2566-1127-496f-b234-41e42dfc9e8f)  
@@ -62,5 +75,6 @@ Subtelomeric repeat units from across the GR and GS genomes which are >86% simil
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/3edaded2-90a5-4101-9193-1c84932aefa2)
 
 At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version of the tree without the table legend, just for fun.  
+
 
 ### Supp. Fig. 4: Differential expression of eight glyphosate-resistnt versus eight glyphosate-susceptible *Eleusine indica* individuals.
