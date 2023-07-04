@@ -3,7 +3,7 @@ DOI: [10.21203/rs.3.rs-2587355/v1](https://www.researchsquare.com/article/rs-258
 Repo name: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV)
 
 ### Fig. 1: Overview of the glyphosate-susceptible *Eleusine indica* genome.
-### Circos Plot  
+#### *Circos Plot*  
 
 Install Circos directly from [Circos website](http://circos.ca/software/download/circos/) or from [Conda](https://anaconda.org/bioconda/circos).
 
