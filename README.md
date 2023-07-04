@@ -96,3 +96,8 @@ RNA-Seq data from all 16 _E. indica_ individuals
   
 ##### Volcano plot generation:
 
+
+
+
+<sup><sub>The above plot from RNA-Seq data shows over-expressed (red) and underexpressed (blue) genes in GR E. indica individuals with labels for all identified genes within the EPSPS
+cassette. Gene labels with a non-integer numerical value represent splice variants of the same gene. Genes below a p-value of 0.01 or a fold change value below two were considered not differentially expressed (grey) between the two treatment groups.
