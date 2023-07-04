@@ -38,7 +38,7 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
   
   
 ### Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.
-**Synteny Ideogram**
+#### *Synteny Ideogram*
 
 ### Fig. 3: Copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible *Eleusine indica* individuals.
 #### *CNV Ideogram*  
