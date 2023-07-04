@@ -8,10 +8,10 @@ Repo name: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subtel
 
 #### Prior data wrangling:
 - a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled GS genome using standard command line tools/languages, like `grep` and `AWK`.
-- b. Gene density file (`geneCoverageHeatMap.circos`) gives normalized gene density in 500Kb windows. Genome windows were made with [bedtools](https://github.com/arq5x/bedtools2). Total base pairs contained within genes were counted in each window from the .gff annotation file, divided by total base pairs in each window (500Kb), and normalized.
-- c. Transposable element 
-- d.
-
+- b. Gene density file (`geneCoverageHeatMap.circos`) gives normalized gene density in 500Kb genomic windows. Genome windows were made with [bedtools](https://github.com/arq5x/bedtools2). Total base pairs contained within genes were counted in each window from the .gff annotation file, divided by total base pairs in each window (500Kb), and normalized. Genes were annotated with the [International Weed Genomics Consortium Annotation Pipeline](https://github.com/PattersonWeedLab/IWGC_annotation_pipeline).
+- c. Transposable element genomic coverage for _Gypsy_ (`gypsycoverage.circos`), _Copia_ (`copiacoverage.circos`), and all transposable elements excluding _Gypsy_ and _Copia_ elements (`othercoverage.circos`) was calculated in terms of total base pairs contained in TEs divided by total base pairs in each 500Kb bedtools-generated genomic window. TEs were annotated with [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler).
+- d. Transposable element density file (`TE_total_coverage.circos`) gives normalized TE density in 500Kb genomic windows. TE element density windows were generated in the same fashion as `geneCoverageHeatMap.circos`.
+  
 #### Circos generation:
 Install Circos directly from [Circos website](http://circos.ca/software/download/circos/) or from [Conda](https://anaconda.org/bioconda/circos).
 
