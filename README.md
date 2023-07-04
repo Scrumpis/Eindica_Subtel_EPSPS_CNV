@@ -36,7 +36,7 @@ The below Circos plot will be produced. Note: a, b, c, and d labels in the publi
 
 I have also included a commented out `<links>` section in `eindica_circos.conf` which was not included in Fig. 1 of the publication. If you are curious about what links will look like between interchromosomal syntenic regions which are 14.5Kb or longer, uncomment the `<links>` section.  
   
-
+  
 ### Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.
 **Synteny Ideogram**
 
