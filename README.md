@@ -5,7 +5,7 @@ Repo name: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subtel
 
 ### Fig. 1: Overview of the glyphosate-susceptible *Eleusine indica* genome.
 #### *Circos Plot*  
----------
+
 #### Prior data wrangling:
 - a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled GS genome using standard command line tools/languages, like `grep` and `AWK`.
 - b. Gene density file (`geneCoverageHeatMap.circos`) gives normalized gene density in 500Kb windows. Genome windows were made with [bedtools](https://github.com/arq5x/bedtools2). Total base pairs contained within genes were counted in each window from the .gff annotation file, divided by total base pairs in each window (500Kb), and normalized.
