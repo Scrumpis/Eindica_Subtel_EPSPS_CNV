@@ -12,10 +12,10 @@ Repo name: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subtel
 - a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled GS genome using standard command line tools/languages, like `grep` and `AWK`.
 - b. Gene density file (`geneCoverageHeatMap.circos`) gives normalized gene density in 500Kb genomic windows. Genome windows were made with [bedtools](https://github.com/arq5x/bedtools2) (version 2.30.0). Total base pairs contained within genes were counted in each window from the .gff annotation file, divided by total base pairs in each window (500Kb), and normalized. Genes were annotated with the [International Weed Genomics Consortium Annotation Pipeline](https://github.com/PattersonWeedLab/IWGC_annotation_pipeline).
 - c. Transposable element genomic coverage for _Gypsy_ (`gypsycoverage.circos`), _Copia_ (`copiacoverage.circos`), and all transposable elements excluding _Gypsy_ and _Copia_ elements (`othercoverage.circos`) was calculated in terms of total base pairs contained in TEs divided by total base pairs in each 500Kb bedtools-generated genomic window. TEs were annotated with [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler) (version 2.0.2).
-- d. Transposable element density file (`TE_total_coverage.circos`) gives normalized TE density in 500Kb genomic windows. TE element density windows were generated in the same fashion as `geneCoverageHeatMap.circos`.
+- d. Transposable element density file (`TE_total_coverage.circos`) gives normalized TE density in 500Kb genomic windows. TE element density windows were generated in the same fashion as the gene density file (`geneCoverageHeatMap.circos`).
 - Region-A and -B labels contained within `labels_epsps.circos.txt` are punctuated with karyotype track (a.) highlights contained within `highlights_epsps.txt`.
   
-#### Circos generation:
+#### Circos plot generation:
 Install Circos directly from [Circos website](http://circos.ca/software/download/circos/) or from [Conda](https://anaconda.org/bioconda/circos).
 
 If you see this error when installing via Conda...  
@@ -67,7 +67,9 @@ Illumina resequencing data of eight GR and eight GS Eindica individuals was alig
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/281c2566-1127-496f-b234-41e42dfc9e8f)  
 
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/c7b59be0-0fba-4b8e-9034-0dc9a501095f)
-  
+
+The above plots show copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible _Eleusine indica_ individuals. The ideogram shows deletions below 0.25x of average read depth (blue color spectrum), copy number variation above 0.25 of average read depth and below 4x of average read depth and with a p-value greater than 0.01 (white), and duplications above 4x of average read depth (red color spectrum) across chromosome three in eight glyphosate-resistant (R) versus eight glyphosate-susceptible (S) _E. indica_ individuals at a scale of (a: the left panel) full chromosome length (63,742,515 base pairs) and (b:the right panel) the first 5,000,000 base pairs of chromosome three. Band thickness is proportional to the length of the genomic region exhibiting copy number variation. Region-A (green triangle), containing EPSPS, and Region-B (purple triangle), the genomic region co-duplicated with EPSPS, are consistently duplicated around 25x compared to average read depth in R individuals but are not duplicated in any of the S individuals.
+
 ---------------
 
 ### <ins>Fig. 5: Relatedness of EPSPS-cassette subtelomere sequence to chromosomal subtelomeric sequences of the glyphosate-resistant and glyphosate-susceptible *Eleusine indica* genomes.</ins>
