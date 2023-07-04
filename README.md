@@ -45,7 +45,11 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 ### Fig. 5: Relatedness of EPSPS-cassette subtelomere sequence to chromosomal subtelomeric sequences of the glyphosate-resistant and glyphosate-susceptible *Eleusine indica* genomes.
 #### *Tree to visualize relatedness with table as legend*
 
-[Eindica_Subtel_Tree](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Subtel_Tree) contains `Eindica_Subtel_Tree_V5.R` to create the below tree as well as the only needed source file, `Eindica_R_S_EPSPS_SubTels.afa.raxml.bestTree.clean_labels`. Make sure to change the working directory in the Rscript.
+##### Prior data wrangling:
+Subtelomeric repeat units from across the GR and GS genomes which are >86% similar in DNA sequence to the EPSPS-Cassette 451bp subtelomere repeat unit were obtained via [BLAST](https://github.com/ncbi/blast_plus_docs). The extracted subtelomeric repeat units were aligned to eachother and the EPSPS-Cassette subtelomere repeat unit with [MUSCLE5](https://github.com/rcedgar/muscle) before creating a tree with [RAXML-NG](https://github.com/amkozlov/raxml-ng). This tree was visualized using `Eindica_Subtel_Tree_V5.R`.  
+
+##### Tree generation:
+[Eindica_Subtel_Tree](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Subtel_Tree) contains `Eindica_Subtel_Tree_V5.R` to create the below tree as well as the only needed source file, `Eindica_R_S_EPSPS_SubTels.afa.raxml.bestTree.clean_labels`. Make sure to change the working directory in the Rscript.  
 
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/3edaded2-90a5-4101-9193-1c84932aefa2)
 
