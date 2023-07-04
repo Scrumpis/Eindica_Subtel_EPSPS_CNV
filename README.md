@@ -43,6 +43,13 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 ### Fig. 3: Copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible *Eleusine indica* individuals.
 #### *CNV Ideogram*  
 
+[Eindica_EPSPS_CNV_Ideogram](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_EPSPS_CNV_Ideogram) contains `EindicaRIdeogram_v5.R` to create the below CNV ideograms and the associated source files in 'Eindica_EPSPS_CNV_Ideogram/data'. Note: The publication version of Fig. 3 combines these two figures into one and adds additional visuals using [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).
+
+![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/281c2566-1127-496f-b234-41e42dfc9e8f)  
+
+![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/c7b59be0-0fba-4b8e-9034-0dc9a501095f)
+  
+
 ### Fig. 5: Relatedness of EPSPS-cassette subtelomere sequence to chromosomal subtelomeric sequences of the glyphosate-resistant and glyphosate-susceptible *Eleusine indica* genomes.
 #### *Tree to visualize relatedness with table as legend*
 
