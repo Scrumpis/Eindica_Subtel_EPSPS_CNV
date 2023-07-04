@@ -2,7 +2,7 @@
 DOI: [10.21203/rs.3.rs-2587355/v1](https://www.researchsquare.com/article/rs-2587355/v1)  
 Repo name: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV)
 
-=======================================================================================================
+------------------
 
 
 ### <ins>Fig. 1: Overview of the glyphosate-susceptible *Eleusine indica* genome.</ins>
@@ -52,6 +52,7 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 ### <ins>Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.</ins>
 #### *Synteny Ideogram*
 
+---------------
 
 ### <ins>Fig. 3: Copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible *Eleusine indica* individuals.</ins>
 #### *CNV Ideogram*  
@@ -66,6 +67,7 @@ Illumina resequencing data of 8 GR and 8 GS Eindica individuals was aligned to t
 
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/c7b59be0-0fba-4b8e-9034-0dc9a501095f)
   
+---------------
 
 ### <ins>Fig. 5: Relatedness of EPSPS-cassette subtelomere sequence to chromosomal subtelomeric sequences of the glyphosate-resistant and glyphosate-susceptible *Eleusine indica* genomes.</ins>
 #### *Tree to visualize relatedness with table as legend*
@@ -80,7 +82,8 @@ Subtelomeric repeat units from across the GR and GS genomes which are >86% simil
 <sup><sub>The above plot shows the relatedness of subtelomeric sequences found on the glyphosate-resistant (R; red) and glyphosate-susceptible (S; blue) _E. indica_ genomes to the subtelomeric sequence found on the _EPSPS-cassette_ (green). Chromosomes at branch tips further from cassette are less related to cassette than chromosomes closer to cassette. Branch distance is based on BLAST similarity. The sequences with the highest relatedness to the _EPSPS-cassette_ subtelomere sequence on each chromosome were used as representative sequences to make a tree.</sub></sup>    
   
 At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version of the tree without the table legend, just for fun.  
-  
+
+---------------  
   
 ### <ins>Supp. Fig. 4: Differential expression of eight glyphosate-resistant versus eight glyphosate-susceptible *Eleusine indica* individuals.</ins>
 #### *Volcano plot*  
