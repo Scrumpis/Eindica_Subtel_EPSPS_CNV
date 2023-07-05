@@ -95,9 +95,9 @@ At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version
 RNA-Seq data from all 16 _E. indica_ individuals 
   
 #### Volcano plot generation:
+`Eindica_GRvGS_edgeR_v4.R`
 
 
-
-
+![volcano_plot_600x600](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/9f0d9488-f230-41ed-b30d-db461b788dfa)
 <sup><sub>The above plot from RNA-Seq data shows over-expressed (red) and underexpressed (blue) genes in GR E. indica individuals with labels for all identified genes within the EPSPS
 cassette. Gene labels with a non-integer numerical value represent splice variants of the same gene. Genes below a p-value of 0.01 or a fold change value below two were considered not differentially expressed (grey) between the two treatment groups.
