@@ -92,7 +92,7 @@ At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version
 #### *Volcano plot*  
 
 #### Prior data wrangling:
-RNA-Seq data from all 16 _E. indica_ individuals 
+Illumina paired-end cDNA reads from eight GR and eight GS _E. indica_ individuals were mapped with [HiSat2](https://github.com/DaehwanKimLab/hisat2) against GS transcriptome which was pulled from `E_indica.gff3` annotation file using [gffread](https://github.com/gpertea/gffread).
   
 #### Volcano plot generation:
 `Eindica_GRvGS_edgeR_v4.R`
