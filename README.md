@@ -70,9 +70,9 @@ Illumina resequencing data of eight GR and eight GS Eindica individuals was alig
 #### Ideogram generation:
 [Eindica_EPSPS_CNV_Ideogram](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_EPSPS_CNV_Ideogram) contains `EindicaRIdeogram_v5.R` to create the below CNV ideograms and the associated source files in `Eindica_EPSPS_CNV_Ideogram/data`. Note: The publication version of Fig. 3 combines these two figures into one and adds additional visuals using [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).
 
-![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/281c2566-1127-496f-b234-41e42dfc9e8f)  
+![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/db155620-b7fc-4e39-b263-94f9e6eccc19)  
 
-![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/c7b59be0-0fba-4b8e-9034-0dc9a501095f)
+![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/49294da7-ba12-4668-af57-2ce58db4e307)
 
 <sup><sub>The above plots show copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible _Eleusine indica_ individuals. The ideogram shows deletions below 0.25x of average read depth (blue color spectrum), copy number variation above 0.25 of average read depth and below 4x of average read depth and with a p-value greater than 0.01 (white), and duplications above 4x of average read depth (red color spectrum) across chromosome three in eight glyphosate-resistant (R) versus eight glyphosate-susceptible (S) _E. indica_ individuals at a scale of (the top plot) full chromosome length (63,742,515 base pairs) and (the bottom plot) the first 5,000,000 base pairs of chromosome three. Band thickness is proportional to the length of the genomic region exhibiting copy number variation. Region-A (green triangle), containing _EPSPS_, and Region-B (purple triangle), the genomic region co-duplicated with _EPSPS_, are consistently duplicated around 25x compared to average read depth in R individuals but are not duplicated in any of the S individuals.</sub></sup>   
 
