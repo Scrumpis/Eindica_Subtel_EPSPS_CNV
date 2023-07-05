@@ -7,7 +7,7 @@ GitHub Repo: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subt
 
 ### <ins>Omic Data:</ins>
 _The below data is included for the sake of transparency and is not required to create any of the plots, which are self-contained within their own directories._
-CoGe: [Glyphosate-Susceptible](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) and [Glyphosate-Resistant](https://genomevolution.org/coge/GenomeInfo.pl?gid=66364) _Eleusine indica_ assembled genomes and annotation files
+- CoGe: [Glyphosate-Susceptible](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) and [Glyphosate-Resistant](https://genomevolution.org/coge/GenomeInfo.pl?gid=66364) _Eleusine indica_ assembled genomes and annotation files
 
 ------------------
 
