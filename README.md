@@ -85,13 +85,11 @@ Illumina resequencing data of eight GR and eight GS Eindica individuals was alig
 Subtelomeric repeat units from across the GR and GS genomes which are >86% similar in DNA sequence to the _EPSPS-Cassette_ 451bp subtelomere repeat unit were obtained via [BLAST+](https://github.com/ncbi/blast_plus_docs) (version 2.14.0). The extracted subtelomeric repeat units were aligned to eachother and the _EPSPS-Cassette_ subtelomere repeat unit with [MUSCLE5](https://github.com/rcedgar/muscle) (version 5.1.0) before creating a tree with [RAXML-NG](https://github.com/amkozlov/raxml-ng) (version 1.1.0).
 
 #### Tree generation:
-[Eindica_Subtel_Tree](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Subtel_Tree) contains `Eindica_Subtel_Tree_V5.R` to create the below tree as well as the only needed source file, `Eindica_R_S_EPSPS_SubTels.afa.raxml.bestTree.clean_labels`. Make sure to change the working directory in the Rscript.  
+[Eindica_Subtel_Tree](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Subtel_Tree) contains `Eindica_Subtel_Tree_V5.R` to create the below tree as well as the only needed source file, `Eindica_R_S_EPSPS_SubTels.afa.raxml.bestTree.clean_labels`. Make sure to change the working directory in the Rscript. At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version of the tree without the table legend, just for fun.  
 
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/3edaded2-90a5-4101-9193-1c84932aefa2)
 <sup><sub>The above plot shows the relatedness of subtelomeric sequences found on the glyphosate-resistant (R; red) and glyphosate-susceptible (S; blue) _E. indica_ genomes to the subtelomeric sequence found on the _EPSPS-Cassette_ (green). Chromosomes at branch tips further from cassette are less related to cassette than chromosomes closer to cassette. Branch distance is based on BLAST similarity. The sequences with the highest relatedness to the _EPSPS-Cassette_ subtelomere sequence on each chromosome were used as representative sequences to make a tree.</sub></sup>    
-  
-At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version of the tree without the table legend, just for fun.  
-
+   
 ---------------  
   
 ### <ins>Supp. Fig. 4: Differential expression of eight glyphosate-resistant versus eight glyphosate-susceptible *Eleusine indica* individuals.</ins>
