@@ -98,11 +98,10 @@ At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version
 #### *Volcano plot*  
 
 #### Prior data wrangling:
-Illumina paired-end cDNA reads from eight GR and eight GS _E. indica_ individuals were mapped with [HiSat2](https://github.com/DaehwanKimLab/hisat2) (version 2.1.0) to the GS transcriptome, which was pulled from [E_indica.gff3](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) annotation file using [gffread](https://github.com/gpertea/gffread) (version 0.12.7).
+Illumina paired-end cDNA reads from eight GR and eight GS _E. indica_ individuals were mapped with [HiSat2](https://github.com/DaehwanKimLab/hisat2) (version 2.1.0) to the GS transcriptome, which was pulled from [E_indica.gff3](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) annotation file using [gffread](https://github.com/gpertea/gffread) (version 0.12.7). HiSat2 alignments were converted into a counts table `EindicaRS.counts.v2.txt` using [SAMtools](https://github.com/samtools/samtools) (version 1.11). Labels in `gene_names_v2.csv` were created for all genes annotated within Region-A and -B of the _EPSPS-Cassette_ with command line.  
   
 #### Volcano plot generation:
-The script `Eindica_GRvGS_edgeR_v4.R` contains all differential expression, creates 
-
+The script `Eindica_GRvGS_edgeR_v4.R` calculates differential expression using the two-sided quasi-likelihood F-test in [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html) and plots it into the below volcano plot.  
 
 ![volcano_plot_600x600](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/9f0d9488-f230-41ed-b30d-db461b788dfa)  
 <sup><sub>The above plot from RNA-Seq data shows over-expressed (red) and underexpressed (blue) genes in GR _E. indica_ individuals with labels for all identified genes within the _EPSPS-Cassette_. Gene labels with a non-integer numerical value represent splice variants of the same gene. Genes below a p-value of 0.01 or a fold change value below two were considered not differentially expressed (grey) between the two treatment groups.
