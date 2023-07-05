@@ -5,12 +5,17 @@ GitHub Repo: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subt
 ------------------
 
 
+### Core Data:
+CoGe: [Glyphosate-Susceptible](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) and [Glyphosate-Resistant](https://genomevolution.org/coge/GenomeInfo.pl?gid=66364) _Eleusine indica_ genomes and annotation files
+
+------------------
+
 ### <ins>Fig. 1: Overview of the glyphosate-susceptible *Eleusine indica* genome.</ins>
 #### *Circos Plot*  
 
 #### Prior data wrangling:
-- a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled GS genome using standard command line tools/languages, like `grep` and `AWK`.
-- b. Gene density file (`geneCoverageHeatMap.circos`) gives normalized gene density in 500Kb genomic windows. Genome windows were made with [bedtools](https://github.com/arq5x/bedtools2) (version 2.30.0). Total base pairs contained within genes were counted in each window from the .gff annotation file, divided by total base pairs in each window (500Kb), and normalized. Genes were annotated with the [International Weed Genomics Consortium Annotation Pipeline](https://github.com/PattersonWeedLab/IWGC_annotation_pipeline).
+- a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled [GS genome](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) using standard command line tools/languages, like `grep` and `AWK`.
+- b. Gene density file (`geneCoverageHeatMap.circos`) gives normalized gene density in 500Kb genomic windows. Genome windows were made with [bedtools](https://github.com/arq5x/bedtools2) (version 2.30.0). Total base pairs contained within genes were counted in each window from the [E_indica.gff3](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) annotation file, divided by total base pairs in each window (500Kb), and normalized. Genes were annotated with the [International Weed Genomics Consortium Annotation Pipeline](https://github.com/PattersonWeedLab/IWGC_annotation_pipeline).
 - c. Transposable element genomic coverage for _Gypsy_ (`gypsycoverage.circos`), _Copia_ (`copiacoverage.circos`), and all transposable elements excluding _Gypsy_ and _Copia_ elements (`othercoverage.circos`) was calculated in terms of total base pairs contained in TEs divided by total base pairs in each 500Kb bedtools-generated genomic window. TEs were annotated with [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler) (version 2.0.2).
 - d. Transposable element density file (`TE_total_coverage.circos`) gives normalized TE density in 500Kb genomic windows. TE element density windows were generated in the same fashion as the gene density file (`geneCoverageHeatMap.circos`).
 - Region-A and -B labels contained within `labels_epsps.circos.txt` are punctuated with karyotype track (a.) highlights contained within `highlights_epsps.txt`.
@@ -59,7 +64,7 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 #### *CNV Ideogram*  
 
 #### Prior data wrangling:
-Illumina resequencing data of eight GR and eight GS Eindica individuals was aligned to their corresponding GR or GS genomes using [HiSat2](https://github.com/DaehwanKimLab/hisat2) (version 2.1.0). [CNVnator](https://github.com/abyzovlab/CNVnator) (version 0.4.1) was used with these alignments to assess copy number variation across the genomes in terms of read depth. The resulting CNV files for chromosome three, the native location of EPSPS, were visualized using `EindicaRIdeogram_v5.R`.  
+Illumina resequencing data of eight GR and eight GS Eindica individuals was aligned to their corresponding GR or GS genomes using [HiSat2](https://github.com/DaehwanKimLab/hisat2) (version 2.1.0). [CNVnator](https://github.com/abyzovlab/CNVnator) (version 0.4.1) was used with these alignments to assess copy number variation across the genomes in terms of read depth. The resulting CNV files for chromosome three, the native location of the _EPSPS_ locus, were visualized using `EindicaRIdeogram_v5.R`.  
 
 #### Ideogram generation:
 [Eindica_EPSPS_CNV_Ideogram](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_EPSPS_CNV_Ideogram) contains `EindicaRIdeogram_v5.R` to create the below CNV ideograms and the associated source files in `Eindica_EPSPS_CNV_Ideogram/data`. Note: The publication version of Fig. 3 combines these two figures into one and adds additional visuals using [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).
@@ -68,7 +73,7 @@ Illumina resequencing data of eight GR and eight GS Eindica individuals was alig
 
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/c7b59be0-0fba-4b8e-9034-0dc9a501095f)
 
-<sup><sub>The above plots show copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible _Eleusine indica_ individuals. The ideogram shows deletions below 0.25x of average read depth (blue color spectrum), copy number variation above 0.25 of average read depth and below 4x of average read depth and with a p-value greater than 0.01 (white), and duplications above 4x of average read depth (red color spectrum) across chromosome three in eight glyphosate-resistant (R) versus eight glyphosate-susceptible (S) _E. indica_ individuals at a scale of (the top plot) full chromosome length (63,742,515 base pairs) and (the bottom plot) the first 5,000,000 base pairs of chromosome three. Band thickness is proportional to the length of the genomic region exhibiting copy number variation. Region-A (green triangle), containing EPSPS, and Region-B (purple triangle), the genomic region co-duplicated with EPSPS, are consistently duplicated around 25x compared to average read depth in R individuals but are not duplicated in any of the S individuals.</sub></sup>   
+<sup><sub>The above plots show copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible _Eleusine indica_ individuals. The ideogram shows deletions below 0.25x of average read depth (blue color spectrum), copy number variation above 0.25 of average read depth and below 4x of average read depth and with a p-value greater than 0.01 (white), and duplications above 4x of average read depth (red color spectrum) across chromosome three in eight glyphosate-resistant (R) versus eight glyphosate-susceptible (S) _E. indica_ individuals at a scale of (the top plot) full chromosome length (63,742,515 base pairs) and (the bottom plot) the first 5,000,000 base pairs of chromosome three. Band thickness is proportional to the length of the genomic region exhibiting copy number variation. Region-A (green triangle), containing _EPSPS_, and Region-B (purple triangle), the genomic region co-duplicated with _EPSPS_, are consistently duplicated around 25x compared to average read depth in R individuals but are not duplicated in any of the S individuals.</sub></sup>   
 
 ---------------
 
@@ -76,13 +81,13 @@ Illumina resequencing data of eight GR and eight GS Eindica individuals was alig
 #### *Tree to visualize relatedness with table as legend*
 
 #### Prior data wrangling:
-Subtelomeric repeat units from across the GR and GS genomes which are >86% similar in DNA sequence to the EPSPS-Cassette 451bp subtelomere repeat unit were obtained via [BLAST+](https://github.com/ncbi/blast_plus_docs) (version 2.14.0). The extracted subtelomeric repeat units were aligned to eachother and the EPSPS-Cassette subtelomere repeat unit with [MUSCLE5](https://github.com/rcedgar/muscle) (version 5.1.0) before creating a tree with [RAXML-NG](https://github.com/amkozlov/raxml-ng) (version 1.1.0).
+Subtelomeric repeat units from across the GR and GS genomes which are >86% similar in DNA sequence to the _EPSPS-Cassette_ 451bp subtelomere repeat unit were obtained via [BLAST+](https://github.com/ncbi/blast_plus_docs) (version 2.14.0). The extracted subtelomeric repeat units were aligned to eachother and the _EPSPS-Cassette_ subtelomere repeat unit with [MUSCLE5](https://github.com/rcedgar/muscle) (version 5.1.0) before creating a tree with [RAXML-NG](https://github.com/amkozlov/raxml-ng) (version 1.1.0).
 
 #### Tree generation:
 [Eindica_Subtel_Tree](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Subtel_Tree) contains `Eindica_Subtel_Tree_V5.R` to create the below tree as well as the only needed source file, `Eindica_R_S_EPSPS_SubTels.afa.raxml.bestTree.clean_labels`. Make sure to change the working directory in the Rscript.  
 
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/3edaded2-90a5-4101-9193-1c84932aefa2)
-<sup><sub>The above plot shows the relatedness of subtelomeric sequences found on the glyphosate-resistant (R; red) and glyphosate-susceptible (S; blue) _E. indica_ genomes to the subtelomeric sequence found on the _EPSPS-cassette_ (green). Chromosomes at branch tips further from cassette are less related to cassette than chromosomes closer to cassette. Branch distance is based on BLAST similarity. The sequences with the highest relatedness to the _EPSPS-cassette_ subtelomere sequence on each chromosome were used as representative sequences to make a tree.</sub></sup>    
+<sup><sub>The above plot shows the relatedness of subtelomeric sequences found on the glyphosate-resistant (R; red) and glyphosate-susceptible (S; blue) _E. indica_ genomes to the subtelomeric sequence found on the _EPSPS-Cassette_ (green). Chromosomes at branch tips further from cassette are less related to cassette than chromosomes closer to cassette. Branch distance is based on BLAST similarity. The sequences with the highest relatedness to the _EPSPS-Cassette_ subtelomere sequence on each chromosome were used as representative sequences to make a tree.</sub></sup>    
   
 At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version of the tree without the table legend, just for fun.  
 
@@ -92,12 +97,11 @@ At the bottom of `Eindica_Subtel_Tree_V5.R` you will find the code for a version
 #### *Volcano plot*  
 
 #### Prior data wrangling:
-Illumina paired-end cDNA reads from eight GR and eight GS _E. indica_ individuals were mapped with [HiSat2](https://github.com/DaehwanKimLab/hisat2) against GS transcriptome which was pulled from `E_indica.gff3` annotation file using [gffread](https://github.com/gpertea/gffread).
+Illumina paired-end cDNA reads from eight GR and eight GS _E. indica_ individuals were mapped with [HiSat2](https://github.com/DaehwanKimLab/hisat2) (version 2.1.0) to the GS transcriptome, which was pulled from [E_indica.gff3](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) annotation file using [gffread](https://github.com/gpertea/gffread) (version 0.12.7).
   
 #### Volcano plot generation:
-`Eindica_GRvGS_edgeR_v4.R`
+The script `Eindica_GRvGS_edgeR_v4.R` contains all differential expression, creates 
 
 
 ![volcano_plot_600x600](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/9f0d9488-f230-41ed-b30d-db461b788dfa)  
-<sup><sub>The above plot from RNA-Seq data shows over-expressed (red) and underexpressed (blue) genes in GR E. indica individuals with labels for all identified genes within the EPSPS
-cassette. Gene labels with a non-integer numerical value represent splice variants of the same gene. Genes below a p-value of 0.01 or a fold change value below two were considered not differentially expressed (grey) between the two treatment groups.
+<sup><sub>The above plot from RNA-Seq data shows over-expressed (red) and underexpressed (blue) genes in GR _E. indica_ individuals with labels for all identified genes within the _EPSPS-Cassette_. Gene labels with a non-integer numerical value represent splice variants of the same gene. Genes below a p-value of 0.01 or a fold change value below two were considered not differentially expressed (grey) between the two treatment groups.
