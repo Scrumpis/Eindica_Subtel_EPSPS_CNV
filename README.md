@@ -59,6 +59,21 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 ### <ins>Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.</ins>
 #### *Synteny Ideogram*
 
+#### Prior data wrangling:
+GS and GR _Eindica_ genomes were aligned to eachother using [minimap2](https://github.com/lh3/minimap2) (version 2.24) and the resulting .paf was converted into a .coords file using [RagTag](https://github.com/malonge/RagTag) (version 2.1.0) and [MUMmer4](https://github.com/mummer4/mummer) (version 4.0.0) as shown below.
+```bash
+minimap2 -cx asm20 -t 14 EleInS.fa EleInR.fa > EleInS_v_EleInR.paf
+
+#ragtag.py is from RagTag
+ragtag.py paf2delta EleInS_v_EleInR.paf > EleInS_v_EleInR.delta
+
+#Show-coords is from MUMmer4
+show-coords -lTH EleInS_v_EleInR.delta > EleInS_v_EleInR.coords
+```
+
+#### Ideogram generation:
+
+
 Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).  
   
 <sup><sub>Grey links indicate shared synteny between chromosome pairs. Red links indicate large inversions of synteny between the genomes. Black links represent Region-A and Region-B of the _EPSPS-Cassette_ in their native locations.</sub></sup>  
