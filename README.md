@@ -15,7 +15,7 @@ _The below data is included for the sake of transparency and is not required to 
 #### *Circos Plot*  
 
 #### Prior data wrangling:
-- a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled [GS genome](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) using standard command line tools/languages, like `grep` and `AWK`.
+a. Karyotype file (`eindicakaryotype.circos`) is a space delimited genome index that was generated from the assembled [GS genome](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) using standard command line tools/languages, like `grep` and `AWK`.
 - b. Gene density file (`geneCoverageHeatMap.circos`) gives normalized gene density in 500Kb genomic windows. Genome windows were made with [bedtools](https://github.com/arq5x/bedtools2) (version 2.30.0). Total base pairs contained within genes were counted in each window from the [E_indica.gff3](https://genomevolution.org/coge/GenomeInfo.pl?gid=66361) annotation file, divided by total base pairs in each window (500Kb), and normalized. Genes were annotated with the [International Weed Genomics Consortium Annotation Pipeline](https://github.com/PattersonWeedLab/IWGC_annotation_pipeline).
 - c. Transposable element genomic coverage for _Gypsy_ (`gypsycoverage.circos`), _Copia_ (`copiacoverage.circos`), and all transposable elements excluding _Gypsy_ and _Copia_ elements (`othercoverage.circos`) was calculated in terms of total base pairs contained in TEs divided by total base pairs in each 500Kb bedtools-generated genomic window. TEs were annotated with [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler) (version 2.0.2).
 - d. Transposable element density file (`TE_total_coverage.circos`) gives normalized TE density in 500Kb genomic windows. TE element density windows were generated in the same fashion as the gene density file (`geneCoverageHeatMap.circos`).
@@ -60,7 +60,7 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 #### *Synteny Ideogram*
 
 #### Prior data wrangling:
-GS and GR _Eindica_ genomes were aligned to eachother using [minimap2](https://github.com/lh3/minimap2) (version 2.24) and the resulting .paf was converted into a .coords file using [RagTag](https://github.com/malonge/RagTag) (version 2.1.0) and [MUMmer4](https://github.com/mummer4/mummer) (version 4.0.0) as shown below.
+GS and GR _Eindica_ genomes were aligned to eachother using [minimap2](https://github.com/lh3/minimap2) (version 2.24) and the resulting `.paf` was converted into a `.coords` file using [RagTag](https://github.com/malonge/RagTag) (version 2.1.0) and [MUMmer4](https://github.com/mummer4/mummer) (version 4.0.0) as shown below.
 ```bash
 minimap2 -cx asm20 -t 14 EleInS.fa EleInR.fa > EleInS_v_EleInR.paf
 
@@ -70,11 +70,10 @@ ragtag.py paf2delta EleInS_v_EleInR.paf > EleInS_v_EleInR.delta
 #Show-coords is from MUMmer4
 show-coords -lTH EleInS_v_EleInR.delta > EleInS_v_EleInR.coords
 ```
+The resulting coords file was given an additional column `fill` to colorize links using command line and saved as `RvsS.dualsynteny.cis.txt`. `RvsS.dualKaryotype.txt` is genome index of both the GS and GR genomes with four additional columns (`fill`,	`species`,	`size`,	and `color`) that were added with command line. These files were visualized using `Eindica_Synteny_Ideogram_V1.R`.  
 
 #### Ideogram generation:
-
-
-Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).  
+EindicaRS_Synteny_Ideogram contains `Eindica_Synteny_Ideogram_V1.R` and the only two source files, `RvsS.dualsynteny.cis.txt` and `RvsS.dualKaryotype.txt`. Running the R script will produce the below ideogram. Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).  
   
 <sup><sub>Grey links indicate shared synteny between chromosome pairs. Red links indicate large inversions of synteny between the genomes. Black links represent Region-A and Region-B of the _EPSPS-Cassette_ in their native locations.</sub></sup>  
 
