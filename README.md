@@ -59,6 +59,10 @@ I have also included a commented out `<links>` section in `eindica_circos.conf` 
 ### <ins>Fig. 2: An ideogram of glyphosate-susceptible and -resistant *Eleusine indica* genome alignment.</ins>
 #### *Synteny Ideogram*
 
+Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).  
+  
+<sup><sub>Grey links indicate shared synteny between chromosome pairs. Red links indicate large inversions of synteny between the genomes. Black links represent Region-A and Region-B of the _EPSPS-Cassette_ in their native locations.</sub></sup>  
+
 ---------------
 
 ### <ins>Fig. 3: Copy number variation in chromosome three across eight glyphosate-resistant and eight glyphosate-susceptible *Eleusine indica* individuals.</ins>
