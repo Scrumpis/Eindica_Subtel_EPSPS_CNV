@@ -24,7 +24,7 @@ _The below data is included for the sake of transparency and is not required to 
 - **Region-A** and **Region-B** labels contained within `labels_epsps.circos.txt` are punctuated with highlights on the karyotype track (a.) contained within `highlights_epsps.txt`.
   
 #### Circos plot generation:
-Install Circos directly from [Circos website](http://circos.ca/software/download/circos/) or from [Conda](https://anaconda.org/bioconda/circos).
+Install Circos directly from [Circos website](http://circos.ca/software/download/circos/) or from [Conda](https://anaconda.org/bioconda/circos). This plot was made with Circos version 0.69.9 from [Bioconda](https://bioconda.github.io/).
 
 If you see this error when installing via Conda...  
 `UnsatisfiableError: 
