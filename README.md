@@ -48,8 +48,7 @@ Run the below command from the directory [EindicaGS_Circos](https://github.com/S
 
 `circos -conf eindica_circos_006/eindica_circos.conf -outputdir eindica_circos_006/tmp`
 
-The below Circos plot will be produced. _Note: a, b, c, and d labels in the publication version of the figure were added to the final image using [Inkspace](https://inkscape.org/).
-_
+The below Circos plot will be produced. _Note: a, b, c, and d labels in the publication version of the figure were added to the final image using [Inkspace](https://inkscape.org/)._    
 ![eindicacircos](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/4a6a3865-28f6-4c1b-b7a4-c1999f33a80a)
 <sup><sub>The above Circos plot shows (a.) the length (Mb) of chromosomes one through nine as an index with corresponding (b.) gene-rich (blue) and gene-poor (yellow) genomic regions, (c.) *Gypsy* (red), *Copia* (blue), and other (black) transposable element family coverage across the genome (scale: 0-50%), (d.) transposable element rich (red) and transposable element poor (yellow) genomic regions, and the native locations of Region-A (red label) and Region-B (blue label) of the subtelomeric *EPSPS-Cassette*.</sub></sup>
 
@@ -74,8 +73,8 @@ show-coords -lTH EleInS_v_EleInR.delta > EleInS_v_EleInR.coords
 The resulting coords file was given an additional column `fill` to colorize links using command line and saved as `RvsS.dualsynteny.cis.txt`. `RvsS.dualKaryotype.txt` is genome index of both the GS and GR genomes with four additional columns (`fill`,	`species`,	`size`,	and `color`) that were added with command line. These files were visualized using `Eindica_Synteny_Ideogram_V1.R`.  
 
 #### Ideogram generation:
-[EindicaRS_Synteny_Ideogram](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Synteny_Ideogram) contains `Eindica_Synteny_Ideogram_V1.R` and the only two source files, `RvsS.dualsynteny.cis.txt` and `RvsS.dualKaryotype.txt`. Running the R script will produce the below ideogram. _Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint). _ 
-
+[EindicaRS_Synteny_Ideogram](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Synteny_Ideogram) contains `Eindica_Synteny_Ideogram_V1.R` and the only two source files, `RvsS.dualsynteny.cis.txt` and `RvsS.dualKaryotype.txt`. Running the R script will produce the below ideogram. _Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint)._  
+  
 ![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/2a256a6b-91c3-47be-95d5-266992da051b)
 <sup><sub>Grey links indicate shared synteny between chromosome pairs. Red links indicate large inversions of synteny between the genomes. Black links represent Region-A and Region-B of the _EPSPS-Cassette_ in their native locations.</sub></sup>  
 
