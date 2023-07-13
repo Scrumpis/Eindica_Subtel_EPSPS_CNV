@@ -97,7 +97,7 @@ Illumina resequencing data of eight GR and eight GS Eindica individuals was alig
 
 ---------------
 
-### <ins>Fig. 5: Relatedness of EPSPS-cassette subtelomere sequence to chromosomal subtelomeric sequences of the glyphosate-resistant and glyphosate-susceptible *Eleusine indica* genomes.</ins>
+### <ins>Fig. 5: Relatedness of _EPSPS-cassette_ subtelomere sequence to chromosomal subtelomeric sequences of the glyphosate-resistant and glyphosate-susceptible *Eleusine indica* genomes.</ins>
 #### *Tree to visualize relatedness with table as legend*
 
 #### Prior data wrangling:
