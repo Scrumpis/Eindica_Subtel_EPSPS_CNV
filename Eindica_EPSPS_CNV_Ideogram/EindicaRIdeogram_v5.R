@@ -1,6 +1,7 @@
 #Nicholas A. Johnson
 #Dr. Eric Patterson's Lab at Michigan State University
 #2022.12.28
+#Last tested R version: 4.3.1
 #Subtelomeric 5-enolpyruvylshikimate-3-phosphate synthase copy number variation 
 #confers glyphosate resistance in Eleusine indica.
 #Fig. 3: Copy number variation in chromosome three across eight glyphosate-resistant 
