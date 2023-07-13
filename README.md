@@ -74,8 +74,9 @@ show-coords -lTH EleInS_v_EleInR.delta > EleInS_v_EleInR.coords
 The resulting coords file was given an additional column `fill` to colorize links using command line and saved as `RvsS.dualsynteny.cis.txt`. `RvsS.dualKaryotype.txt` is genome index of both the GS and GR genomes with four additional columns (`fill`,	`species`,	`size`,	and `color`) that were added with command line. These files were visualized using `Eindica_Synteny_Ideogram_V1.R`.  
 
 #### Ideogram generation:
-EindicaRS_Synteny_Ideogram contains `Eindica_Synteny_Ideogram_V1.R` and the only two source files, `RvsS.dualsynteny.cis.txt` and `RvsS.dualKaryotype.txt`. Running the R script will produce the below ideogram. Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).  
-  
+[EindicaRS_Synteny_Ideogram](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/tree/main/Eindica_Synteny_Ideogram) contains `Eindica_Synteny_Ideogram_V1.R` and the only two source files, `RvsS.dualsynteny.cis.txt` and `RvsS.dualKaryotype.txt`. Running the R script will produce the below ideogram. Note: Numbers in boxes above and below the ideogram and bold letter “T”s on the karyotype in the publication version of this figure were added in [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint).  
+
+![image](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV/assets/91402988/2a256a6b-91c3-47be-95d5-266992da051b)
 <sup><sub>Grey links indicate shared synteny between chromosome pairs. Red links indicate large inversions of synteny between the genomes. Black links represent Region-A and Region-B of the _EPSPS-Cassette_ in their native locations.</sub></sup>  
 
 ---------------
