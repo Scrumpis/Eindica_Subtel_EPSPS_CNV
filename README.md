@@ -8,7 +8,9 @@ Repo Author: [Nicholas A. Johnson](https://github.com/Scrumpis)
 ### <ins>About:</ins>  
 This repository was developed to improve the transparency and reproducibilty of the computational methods used in the _Nature Communications_ article "[Subtelomeric _5-enolpyruvylshikimate-3-phosphate synthase_ copy number variation confers glyphosate resistance in _Eleusine indica_](https://rdcu.be/djk7N)". Please feel free to use any or all of the visualization methods or plot code provided in this repository and use the below citation if this information was helpful for you.
 
-```Zhang, C., Johnson, N.A., Hall, N. et al. Subtelomeric _5-enolpyruvylshikimate-3-phosphate synthase_ copy number variation confers glyphosate resistance in _Eleusine indica_. Nat Commun 14, 4865 (2023). https://doi.org/10.1038/s41467-023-40407-6```
+```
+Zhang, C., Johnson, N.A., Hall, N. et al. Subtelomeric _5-enolpyruvylshikimate-3-phosphate synthase_ copy number variation confers glyphosate resistance in _Eleusine indica_. Nat Commun 14, 4865 (2023). https://doi.org/10.1038/s41467-023-40407-6
+```
 
 ------------------
 
