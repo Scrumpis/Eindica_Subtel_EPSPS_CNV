@@ -1,12 +1,14 @@
-# Subtelomeric 5-enolpyruvylshikimate-3-phosphate synthase copy number variation confers glyphosate resistance in *Eleusine indica*
-DOI: [10.21203/rs.3.rs-2587355/v1](https://www.researchsquare.com/article/rs-2587355/v1)  
+# Subtelomeric _5-enolpyruvylshikimate-3-phosphate synthase_ copy number variation confers glyphosate resistance in *Eleusine indica*
+DOI: [10.1038/s41467-023-40407-6](https://rdcu.be/djk7N)  
 GitHub Repo: [Eindica_Subtel_EPSPS_CNV](https://github.com/Scrumpis/Eindica_Subtel_EPSPS_CNV)  
 Repo Author: [Nicholas A. Johnson](https://github.com/Scrumpis)  
 
 ------------------
 
 ### <ins>About:</ins>  
-This repository was developed to improve the transparency and reproducibilty of the computational methods used in the _Nature Communications_ article "Subtelomeric 5-enolpyruvylshikimate-3-phosphate synthase copy number variation confers glyphosate resistance in _Eleusine indica_". Please feel free to use any or all of the visualization methods or plot code provided in this repository.
+This repository was developed to improve the transparency and reproducibilty of the computational methods used in the _Nature Communications_ article "[Subtelomeric _5-enolpyruvylshikimate-3-phosphate synthase_ copy number variation confers glyphosate resistance in _Eleusine indica_](https://rdcu.be/djk7N)". Please feel free to use any or all of the visualization methods or plot code provided in this repository and use the below citation if this information was helpful for you.
+
+Zhang, C., Johnson, N.A., Hall, N. et al. Subtelomeric _5-enolpyruvylshikimate-3-phosphate synthase_ copy number variation confers glyphosate resistance in _Eleusine indica_. Nat Commun 14, 4865 (2023). https://doi.org/10.1038/s41467-023-40407-6
 
 ------------------
 
